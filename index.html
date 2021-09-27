@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!--Metas-->
+    <meta charset="UTF-8">
+    <meta name="author" content="Elmer Vargas Salazar">
+    <meta name="description" content="Aplicación web acerca de la calculadora tradicional">
+    <meta name="keywords" content="calculadora">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Título de Pestaña-->
+    <title>Aplicación - Calculadora</title>
+    <!--Ícono de Pestaña-->
+    <link rel="shortcut icon" href="img/icono.jpg" type="image/x-icon">
+    <!--Estilos CSS-->
+    <link rel="stylesheet" href="css/estilos.css">
+    <!--JavaScript-->
+    <script src="js/calculadora.js"></script>
+</head>
+<body>
+    <form action="" id="formulario">
+        <h3>Calculadora</h3>
+        <!--Pantalla de la calculadora-->
+        <input type="text" id="pantalla" disabled>
+        <!--Botones numéricos-->
+        <div id="btnNum">
+            <button class="color2" id="inicializa" onclick="Inicializar(document.getElementById('inicializa').value)">C</button>
+            <input type="button" value="7" class="color1" id="siete" onclick="num(document.getElementById('siete').value)">
+            <input type="button" value="8" class="color1" id="ocho" onclick="num(document.getElementById('ocho').value)">
+            <input type="button" value="9" class="color1" id="nueve" onclick="num(document.getElementById('nueve').value)">
+            <input type="button" value="4" class="color1" id="cuatro" onclick="num(document.getElementById('cuatro').value)">
+            <input type="button" value="5" class="color1" id="cinco" onclick="num(document.getElementById('cinco').value)">
+            <input type="button" value="6" class="color1" id="seis" onclick="num(document.getElementById('seis').value)">
+            <input type="button" value="1" class="color1" id="uno" onclick="num(document.getElementById('uno').value)">
+            <input type="button" value="2" class="color1" id="dos" onclick="num(document.getElementById('dos').value)">
+            <input type="button" value="3" class="color1" id="tres" onclick="num(document.getElementById('tres').value)">
+            <input type="button" value="0" class="color1" id="cero" onclick="num(document.getElementById('cero').value)">
+            <input type="button" value="." class="color1" id="decimal" onclick="num(document.getElementById('decimal').value)">
+        </div>
+        <!--Botones operacionales-->
+        <div id="btnOpera">
+            <input type="button" value="/" class="color2" id="divis" onclick="num(document.getElementById('divis').value)">
+            <input type="button" value="*" class="color2" id="multi" onclick="num(document.getElementById('multi').value)">
+            <input type="button" value="-" class="color2" id="resta" onclick="num(document.getElementById('resta').value)">
+            <input type="button" value="+" class="color2" id="suma" onclick="num(document.getElementById('suma').value)">
+            <input type="button" value="=" class="color2" id="igual" onclick="resultado()">
+        </div>
+    </form>
+    <!--Fin del Formulario-->
+</body>
+</html>
