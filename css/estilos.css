@@ -1,0 +1,86 @@
+/*Estilos Generales*/
+:root{
+    --color-primario: #365a5a;
+    --color-secundario: #b8b8b8;
+}
+body{
+    color: #000; font-family: Georgia;
+    background-color: #e9e9e9; user-select: none;
+}
+
+/*DISEÑO PARA LA CALCULADORA*/
+#formulario{
+    height: 350px; width: 350px;
+    border: 2px solid #505050;    
+    background-color: #e4e0c2;
+    margin: 100px auto; padding: 5px;
+}
+#formulario h3{
+    font-size: 22px; text-align: center;
+    color: var(--color-primario); 
+}
+
+/*Pantalla de la calculadora y su tipografía*/
+#pantalla{
+    height: 40px; width: 230px; 
+    font-size: 25px; font-family: Consolas;
+    text-align: right; margin-left: 52px;
+    border: 1px solid #757575; background: #f0f0f0;
+}
+
+/*Contenedores para los botones*/
+#btnNum, #btnOpera{
+    margin-top: 12px; width: 180px; 
+    height: 200px; padding: 5px; float: left;
+}
+#btnOpera{
+    width: 140px; float: right; position: relative;
+}
+
+/*Diseño general para algunos botones*/
+.color1, .color2{
+    width: 55px; height: 35px; cursor: pointer;
+    border-radius: 60px; border: 1px solid #000;
+}
+
+/*Botón Limpiar*/
+#inicializa{
+    width: 100px; height: 25px; font-size: 16px;
+    border-radius: 40px; font-weight: bolder;
+    margin-bottom: 8px; margin-left: 35px;
+}
+
+/*Estilo para botones numéricos*/
+.color1{
+    background-color: var(--color-primario); 
+    color: #fff; margin-bottom: 4px; font-size: 14px;
+}
+
+/*Estilo para botones operacionales*/
+.color2{
+    background-color: var(--color-secundario);
+    color: #000; font-size: 18px;
+}
+
+/*Acomodar botones operacionales*/
+#igual, #divis, #multi, #suma, #resta{position: absolute;}
+#divis, #multi, #suma, #resta{left: 10px;}
+#divis{top: 35px;}
+#multi{top: 75px;}
+#resta{top: 115px;}
+#suma{top: 155px;}
+
+/*Botón de Igual*/
+#igual{
+    height: 130px; width: 60px; top: 47px; 
+    right: 10px; border-radius: 20px; font-size: 30px;
+}
+
+/*Pseudoclase activa para los botones al presionarlos*/
+.color1:active{background-color: #2e4d4d;}
+.color2:active{background-color: #959595;}
+
+/*Pseudoclase focus llamativa para los botones (Accesibilidad Web - Usuarios de Teclado)*/
+.color1:focus, .color2:focus{
+    outline:none; border: 2px solid #df9e11;
+}
